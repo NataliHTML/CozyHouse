@@ -3,5 +3,250 @@
 @import "reset";
 @import "libs";
 @import "global";
-
+.header {
+	background-image: url("../images/header_bg.jpg");
+	height: 100vh;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	&__top {
+		margin-top: 55px;
+		margin-bottom: 100px;
+	}
+	&__inner {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	&__content {
+		padding-top: 150px;
+		max-width: 460px;
+	}
+	&__title {
+		font-size: 44px;
+		line-height: 57px;
+		font-weight: 400;
+		margin-bottom: 45px;
+		color: $white;
+		letter-spacing: 0.6px;
+	}
+	&__text {
+		font-size: 14px;
+		line-height: 24px;
+		margin-bottom: 40px;
+		color: $white;
+	}
+}
+.about {
+	background-color: $white;
+	padding: 90px 0;
+	&__inner {
+		display: flex;
+		justify-content: space-around;
+	}
+	&__images {
+		width: 300px;
+		height: 408px;
+		object-fit: cover;
+	}
+	&__content {
+		max-width: 430px;
+	}
+	&__text {
+		font-size: 15px;
+		line-height: 24px;
+		margin-bottom: 30px;
+	}
+}
+.friends {
+	padding: 70px 0;
+	background-color: $grey-light;
+	text-align: center;
+	&__slider {
+		margin-bottom: 70px;
+	}
+	&__item {
+		border-radius: 10px;
+		max-width: 270px;
+		background-color: $white-light;
+		margin-bottom: 40px;
+		img {
+			width: 270px;
+			height: 270px;
+			object-fit: cover;
+			border-radius: 10px;
+		}
+	}
+	&__name {
+		padding: 40px 0 20px;
+		font-size: 20px;
+		line-height: 45px;
+		letter-spacing: 0.6px;
+	}
+	&__btn {
+		display: inline-block;
+		margin-bottom: 35px;
+		color: $black;
+		font-size: 17px;
+		letter-spacing: 0.6px;
+		border: 2px solid $orange;
+		border-radius: 25px;
+		padding: 15px 30px;
+		transition: all 0.8s;
+		&:hover {
+			background-color: $orange;
+		}
+	}
+}
+.slick-arrow {
+	border: none;
+	outline: none;
+	background-color: transparent;
+	position: absolute;
+	top: 50%;
+	z-index: 5;
+	cursor: pointer;
+	transform: translateY(-50%);
+}
+.slick-next {
+	right: -40px;
+	&:hover {
+		img {
+			background-image: url("../images/icons/right-arrow--hover.png");
+		}
+	}
+}
+.slick-prev {
+	left: -40px;
+	&:hover {
+		img {
+			background-image: url("../images/icons/left-arrow--hover.png");
+		}
+	}
+}
+.help {
+	padding-top: 70px;
+	&__title {
+		text-align: center;
+		margin-bottom: 70px;
+	}
+	&__inner {
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+	}
+	&__item {
+		width: 230px;
+		margin-bottom: 70px;
+	}
+	&__img {
+		margin: 0 auto;
+	}
+	&__text {
+		margin-top: 30px;
+		text-align: center;
+	}
+}
+.donation {
+	padding: 70px 0;
+	background-color: $grey-light;
+	&__inner {
+		display: flex;
+	}
+	&__content {
+		margin-left: 80px;
+		max-width: 550px;
+	}
+	&__subtitle {
+		font-size: 15px;
+		letter-spacing: 0.6px;
+		margin-bottom: 10px;
+	}
+	&__title {
+		margin-bottom: 15px;
+	}
+	&__number {
+		display: inline-block;
+		background-color: $orange;
+		color: $black;
+		line-height: 45px;
+		font-size: 20px;
+		border-radius: 10px;
+		padding: 0 10px 0 50px;
+		position: relative;
+		margin-bottom: 20px;
+		&::before {
+			content: "";
+			position: absolute;
+			background-image: url("../images/icons/credit-card.png");
+			width: 30px;
+			height: 24px;
+			top: 8px;
+			left: 10px;
+			background-repeat: no-repeat;
+			background-size: cover;
+		}
+	}
+	&__text {
+		font-size: 12px;
+		color: #b2b2b2;
+		line-height: 18px;
+		font-style: italic;
+	}
+}
+.footer {
+	padding: 70px 0px;
+	background-image: url("../images/footer_bg.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	&__inner {
+		display: flex;
+	}
+	&__title {
+		color: $white;
+	}
+	&__contacts {
+		width: 300px;
+		margin-right: 170px;
+	}
+	&__adress {
+		width: 300px;
+	}
+	&__link {
+		display: inline-block;
+		margin-bottom: 30px;
+		color: $orange;
+		padding-left: 60px;
+		position: relative;
+		font-size: 18px;
+		&::before {
+			content: "";
+			position: absolute;
+			top: -2px;
+			left: 0;
+		}
+	}
+	&__link--mail {
+		margin-bottom: 55px;
+		&::before {
+			background-image: url("../images/icons/mail.png");
+			width: 40px;
+			height: 26px;
+		}
+	}
+	&__link--phone::before {
+		background-image: url("../images/icons/phone.png");
+		width: 40px;
+		height: 32px;
+	}
+	&__link--map {
+		padding-left: 45px;
+		&::before {
+			background-image: url("../images/icons/map.png");
+			width: 26px;
+			height: 36px;
+		}
+	}
+}
 @import "media";

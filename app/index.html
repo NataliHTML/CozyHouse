@@ -1,18 +1,211 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>1</title>
+	<title>Cozy House</title>
 	<link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body>
-
-
-
+	<header class="header">
+		<div class="container">
+			<div class="header__top">
+				<div class="header__inner">
+					<div class="header__logo">
+						<img class="header__img" src="images/logo.png" alt="logo">
+					</div>
+					<nav class="menu" id="nav">
+						<button class="menu__btn">
+							<span></span>
+						</button>
+						<ul class="menu__list">
+							<li class="menu__list-item">
+								<a class="menu__list-link" href="#" data-scroll="#about">О приюте</a>
+							</li>
+							<li class="menu__list-item">
+								<a class="menu__list-link" href="#" data-scroll="#pets">Наши животные</a>
+							</li>
+							<li class="menu__list-item">
+								<a class="menu__list-link" href="#" data-scroll="#help">Чтобы помочь приюту</a>
+							</li>
+							<li class="menu__list-item">
+								<a class="menu__list-link" href="mailto:email@shelter.com">Контакты</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+			<div class="header__content">
+				<h1 class="header__title">
+					Не только людям нужен дом
+				</h1>
+				<p class="header__text">
+					Собаки и кошки — это радость на четырех лапах, это гарантированное отсутствие одиночества и грусти, это
+					повод выйти на прогулку или спешить домой, потому что там ждут. Взяв животное из приюта, вы получаете
+					колоссальную отдачу в виде любви и благодарности. Если такой возможности нет, то вы можете помочь
+					волонтерам, которые стараются вернуть веру в людей тем, кого оставили на произвол судьбы некогда любимые
+					хозяева.
+				</p>
+				<a class="btn" href="#">Заведи себе друга</a>
+			</div>
+		</div>
+	</header>
+	<section class="about">
+		<div class="container">
+			<div class="about__inner">
+				<div class="about__img">
+					<img class="about__images" src="images/pets.jpg" alt="">
+				</div>
+				<div class="about__content">
+					<h3 class="title">О приюте <br>
+						“Cozy House”</h3>
+					<p class="about__text">
+						Жизнь на улице — это тяжелое испытание для любого животного, но считается, что у кошек шансов на
+						выживание намного меньше, особенно если они попали на улицу из дома. В приюте работают люди, которые
+						пытаются помочь и им постоянно нужна помощь в нелегком деле по спасению кошачьих жизней.
+					</p>
+					<p class="about__text">
+						Здесь живет большое количество животных, которым срочно необходим новый дом и любая помощь. Сотрудники
+						приемника подбирают бездомных собак и кошек, лечат, учат снова доверять людям и усиленно ищут для них
+						новых хозяев.
+						В мире людей счастье каждый понимает по-своему. А вот у животных все намного проще: миска еды и
+						любимый хозяин рядом. Здесь стараются помочь тем, кто в силу обстоятельств лишился этих, в общем-то,
+						несложных радостей.
+					</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="friends">
+		<div class="container">
+			<h3 class="title friends__title">Наши друзья, которые <br>
+				ищут дом</h3>
+			<div class="friends__slider">
+				<div class="friends__item">
+					<img class="friends__img" src="images/slider/item-1.jpg" alt="cat">
+					<div class="friends__name">Вася</div>
+					<a class="friends__btn" href="#">Узнайте больше</a>
+				</div>
+				<div class="friends__item">
+					<img class="friends__img" src="images/slider/item-2.jpg" alt="cat">
+					<div class="friends__name">Малыш</div>
+					<a class="friends__btn" href="#">Узнайте больше</a>
+				</div>
+				<div class="friends__item">
+					<img class="friends__img" src="images/slider/item-3.jpg" alt="cat">
+					<div class="friends__name">Рич</div>
+					<a class="friends__btn" href="#">Узнайте больше</a>
+				</div>
+				<div class="friends__item">
+					<img class="friends__img" src="images/slider/item-4.jpg" alt="cat">
+					<div class="friends__name">Алиса</div>
+					<a class="friends__btn" href="#">Узнайте больше</a>
+				</div>
+				<div class="friends__item">
+					<img class="friends__img" src="images/slider/item-5.jpg" alt="cat">
+					<div class="friends__name">Рики</div>
+					<a class="friends__btn" href="#">Узнайте больше</a>
+				</div>
+				<div class="friends__item">
+					<img class="friends__img" src="images/slider/item-6.jpg" alt="cat">
+					<div class="friends__name">Мура</div>
+					<a class="friends__btn" href="#">Узнайте больше</a>
+				</div>
+			</div>
+			<a class="friends__btn" href="#">Познакомьтесь с остальными</a>
+		</div>
+	</section>
+	<section class="help">
+		<div class="container">
+			<h3 class="title help__title">Чем вы можете помочь <br>
+				нашему приюту</h3>
+			<div class="help__inner">
+				<div class="help__item">
+					<img class="help__img" src="images/icons/icon-1.png" alt="icon">
+					<div class="help__text">Корм для домашних животных</div>
+				</div>
+				<div class="help__item">
+					<img class="help__img" src="images/icons/icon-2.png" alt="icon">
+					<div class="help__text">Перевозка</div>
+				</div>
+				<div class="help__item">
+					<img class="help__img" src="images/icons/icon-3.png" alt="icon">
+					<div class="help__text">Игрушки</div>
+				</div>
+				<div class="help__item">
+					<img class="help__img" src="images/icons/icon-4.png" alt="icon">
+					<div class="help__text">Миски и чашки</div>
+				</div>
+				<div class="help__item">
+					<img class="help__img" src="images/icons/icon-5.png" alt="icon">
+					<div class="help__text">Шампуни</div>
+				</div>
+				<div class="help__item">
+					<img class="help__img" src="images/icons/icon-6.png" alt="icon">
+					<div class="help__text">Витамины</div>
+				</div>
+				<div class="help__item">
+					<img class="help__img" src="images/icons/icon-7.png" alt="icon">
+					<div class="help__text">Медикаменты</div>
+				</div>
+				<div class="help__item">
+					<img class="help__img" src="images/icons/icon-8.png" alt="icon">
+					<div class="help__text">Ошейники / поводки</div>
+				</div>
+				<div class="help__item">
+					<img class="help__img" src="images/icons/icon-9.png" alt="icon">
+					<div class="help__text">Спальная зона</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="donation">
+		<div class="container">
+			<div class="donation__inner">
+				<div class="donation__images">
+					<img class="donation__img" src="images/dog.png" alt="dog">
+				</div>
+				<div class="donation__content">
+					<div class="donation__title title">
+						Кроме того, вы <br>
+						можете сделать пожертвование
+					</div>
+					<div class="donation__subtitle">Название банка /Тип банковского счета</div>
+					<div class="donation__number">8380 2880 8028 8791 7435</div>
+					<p class="donation__text">
+						Самый простой, быстрый, но при этом самый эффективный способ помочь животным – это сделать
+						пожертвование. В настоящее время мы работаем с более 40 приютами в которых содержится более 16 000
+						собак и кошек. Все ваши пожертвования бездомным животным, сделанные через наш сайт, направляются на
+						реализацию проектов Фонда, а с отчетами о проделанной работе можно ознакомиться в соответствующем
+						разделе. Спасибо, что не прошли мимо и помогли тем, кто не может попросить о помощи!
+					</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<footer class="footer">
+		<div class="container">
+			<div class="footer__inner">
+				<div class="footer__contacts">
+					<h3 class="title footer__title">Вопросы<br>
+						и предложения</h3>
+					<a class="footer__link footer__link--mail" href="#">email@shelter.com</a>
+					<a class="footer__link footer__link--phone" href="#">+13 674 567 75 54</a>
+				</div>
+				<div class="footer__adress">
+					<h3 class="title footer__title">Мы
+						ждем <br> вашего визита</h3>
+					<a class="footer__link footer__link--map" href="#">Boston, Central Street, 1st
+						(Entrance from the
+						store)</a>
+					<a class="footer__link footer__link--map" href="#">London, South Park, 18st</a>
+				</div>
+			</div>
+		</div>
+	</footer>
 	<script src="js/main.min.js"></script>
 </body>
 
